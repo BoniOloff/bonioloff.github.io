@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Boni Oloff Nugraha"
-  avatar           : "assets/images/bio-photo-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science & Machine Learning Practitioner and Enthusiast"
   location         : "Chicago, IL"
   email            : 
