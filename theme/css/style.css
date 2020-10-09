@@ -160,7 +160,7 @@ aside > h2 {
   margin-top: 40px;
 }
 
-.navbar a
+.navbar > ul > li > a
 {
     color: #fff;
     text-decoration: none;
