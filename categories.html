@@ -23,6 +23,12 @@
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
           href="https://bonioloff.github.io/theme/pygments/emacs.min.css">
 
+    <script src="https://bonioloff.github.io/theme/tipuesearch/jquery.min.js"></script>
+    <script src="https://bonioloff.github.io/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://bonioloff.github.io/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://bonioloff.github.io/theme/tipuesearch/tipuesearch_set.min.js"></script>
+    <script src="https://bonioloff.github.io/tipuesearch_content.js"></script>
+    <link rel="stylesheet" href="https://bonioloff.github.io/theme/tipuesearch/tipuesearch.min.css" />
 
   <link rel="stylesheet" type="text/css" href="https://bonioloff.github.io/theme/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="https://bonioloff.github.io/theme/font-awesome/css/brands.css">
@@ -62,6 +68,9 @@
       </h1>
 
 <p>Boni's Blog</p>
+        <form class="navbar-search" action="/search.html" role="search">
+          <input type="text" name="q" id="tipue_search_input" placeholder="Search...">
+        </form>
 
       <nav>
         <ul class="list">
@@ -161,6 +170,11 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
 }
 </script>
 
+    <script>
+      $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch();
+      });
+    </script>
 
 </body>
 </html>
