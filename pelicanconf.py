@@ -31,7 +31,9 @@ LINKS = (
 )
 SOCIAL = (
     ("github", "https://github.com/bonioloff"),
-    ("linkedin", "https://www.linkedin.com/in/bonioloff")
+    ("linkedin", "https://www.linkedin.com/in/bonioloff"),
+    ("kaggle", "https://www.kaggle.com/bonioloff"),
+    ("gitlab", "https://gitlab.com/bonioloff")
 )
 MAIN_MENU = True
 MENUITEMS = (
