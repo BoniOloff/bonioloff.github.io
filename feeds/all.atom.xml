@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Boni's Projects</title><link href="https://bonioloff.github.io/" rel="alternate"></link><link href="https://bonioloff.github.io/feeds/all.atom.xml" rel="self"></link><id>https://bonioloff.github.io/</id><updated>2021-04-28T10:20:00-05:00</updated><subtitle>Boni's Projects</subtitle><entry><title>Financial Inclusion and Economic Development</title><link href="https://bonioloff.github.io/financial-inclusion-economic-development.html" rel="alternate"></link><published>2021-04-28T10:20:00-05:00</published><updated>2021-04-28T10:20:00-05:00</updated><author><name>Boni Oloff</name></author><id>tag:bonioloff.github.io,2021-04-28:/financial-inclusion-economic-development.html</id><summary type="html">&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.&lt;/p&gt;</summary><content type="html">&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Boni's Projects</title><link href="https://bonioloff.github.io/" rel="alternate"></link><link href="https://bonioloff.github.io/feeds/all.atom.xml" rel="self"></link><id>https://bonioloff.github.io/</id><updated>2021-04-28T10:20:00-05:00</updated><subtitle>Boni's Projects</subtitle><entry><title>Financial Inclusion and Economic Development</title><link href="https://bonioloff.github.io/financial-inclusion-economic-development.html" rel="alternate"></link><published>2021-04-28T10:20:00-05:00</published><updated>2021-04-28T10:20:00-05:00</updated><author><name>Boni Oloff</name></author><id>tag:bonioloff.github.io,2021-04-28:/financial-inclusion-economic-development.html</id><summary type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="images/map_findex.png"&gt; An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="images/map_findex.png"&gt;&lt;/p&gt;
 &lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at &lt;em&gt;The University of Chicago&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;In this project, we explored the 2017 &lt;strong&gt;World Bank Global Financial Inclusion (Findex)&lt;/strong&gt; database as the latest publicly available cross-countries consumer survey data about the access of basic financial service (demand-side) in order to understand the role of financial inclusion for economic development. Example of key measures from Global Findex are the % of bank account ownership and reasons why people do not have a bank account. We also combined those with 2017 &lt;strong&gt;IMF Financial Access Survey (FAS)&lt;/strong&gt; database to balance the information from the financial service provider perspective (supply-side). Example of key measures from FAS are the number of ATM machines and the number of bank branches in a country. The objective of this analysis is to provide policy maker with stronger rationale to design more specific intervention rather than a generic one. For example, which one should be prioritized to improve overall welfare, a free bank account for poor people or increasing the presence of bank branches network.&lt;/p&gt;
 &lt;h1&gt;Data Preparation&lt;/h1&gt;
@@ -16,6 +17,7 @@
 To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow:&lt;/p&gt;
+&lt;div class="math"&gt;$$log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)$$&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Account&lt;/strong&gt;: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Financial Account&lt;/strong&gt;: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.&lt;/li&gt;
@@ -32,7 +34,76 @@ To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Estimation&lt;/strong&gt;. The estimation result showed that the most effective financial inclusion policy to improve GDP per Capita is the one which related to the Geographical Outreach. In our parsimonious regression, we used the number of ATM machine as the selected variable for Geographical Outreach category. We can interpret the coefficient (0.06) as: All else constant, for each additional 1% increase in ATM per 1000km, we expect about 0.06% increase in GDP per capita. This tells us that one of the most basic needs of a country to progress toward better financial inclusion and achieving welfare improvement is by spreading more access point to the basic financial services (e.g. ATM and bank branch).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Prediction&lt;/strong&gt;. Using OLS, the result of our parsimonious regression is the best one compared to Polynomial Regression and SGD Regression. The small sample size may explain why the test set also performed better under OLS. With only 25 countries as the test set, it will be hard for the non-linear model to capture the whole pattern of the data, thus the linear one performs better.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PCA&lt;/strong&gt;. Based on the scatter plot between PCA1 VS PCA2, we got a very interesting pattern and behavior of latent variables. We can see most of high-income countries have a high value of PCA1 and low value of PCA2. On the other hand, the rest of the income group scored a reversed pattern both for PCA1 and PCA2. We can interpret these as a barrier for a better financial inclusion. The barrier is so high thus only high-income countries can tackle this issue. One possible explanation for these are related to the financial barrier (e.g. high bank account administration cost, high transaction fee) and non-financial barrier (e.g. distance to the nearest bank, heavy documentation to open a bank account).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="PCA" src="images/PCA.png"&gt;&lt;/p&gt;
 &lt;h1&gt;FURTHER WORK &amp;amp; IMPROVEMENT&lt;/h1&gt;
-&lt;p&gt;Some of the potential further works to improve the results are:
-- Adding theoretically strong structural aspect as a control variable to mitigate the confounding factors which has not included in the model. Some macro variables are worth to consider, such as poverty rate, unemployment rate, and interest rate.
-- Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods&lt;/p&gt;</content><category term="Projects"></category><category term="School"></category></entry></feed>
+&lt;p&gt;Some of the potential further works to improve the results are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Adding theoretically strong structural aspect as a control variable to mitigate the confounding factors which has not included in the model. Some macro variables are worth to consider, such as poverty rate, unemployment rate, and interest rate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category></entry></feed>

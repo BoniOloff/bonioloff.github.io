@@ -32,7 +32,7 @@
 
 <meta name="author" content="Boni Oloff" />
 <meta name="description" content="An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare." />
-<meta name="keywords" content="School">
+<meta name="keywords" content="School Projects, Python, API">
 
 
 <meta property="og:site_name" content="Boni's Projects"/>
@@ -45,7 +45,9 @@
 <meta property="article:modified_time" content="2021-04-28 10:20:00-05:00"/>
 <meta property="article:author" content="./author/boni-oloff.html">
 <meta property="article:section" content="Projects"/>
-<meta property="article:tag" content="School"/>
+<meta property="article:tag" content="School Projects"/>
+<meta property="article:tag" content="Python"/>
+<meta property="article:tag" content="API"/>
 <meta property="og:image" content="https://bonioloff.github.io/images/B.png">
 
   <title>Boni's Projects &ndash; Financial Inclusion and Economic Development</title>
@@ -77,6 +79,9 @@
 
             <li>
               <a target="_self" href="#" >CV</a>
+            </li>
+            <li>
+              <a target="_self" href="https://bonioloff.github.io/category/projects.html" >Projects</a>
             </li>
         </ul>
       </nav>
@@ -121,8 +126,9 @@
 
 
   <div>
-    <p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.</p>
+    <p><img alt="Map FINDEX" src="images/map_findex.png"></p>
 <p>This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the <strong>Data and Programming for Public Policy II - PPHA 30536</strong> class at <em>The University of Chicago</em>.</p>
+<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.</p>
 <h1>Introduction</h1>
 <p>In this project, we explored the 2017 <strong>World Bank Global Financial Inclusion (Findex)</strong> database as the latest publicly available cross-countries consumer survey data about the access of basic financial service (demand-side) in order to understand the role of financial inclusion for economic development. Example of key measures from Global Findex are the % of bank account ownership and reasons why people do not have a bank account. We also combined those with 2017 <strong>IMF Financial Access Survey (FAS)</strong> database to balance the information from the financial service provider perspective (supply-side). Example of key measures from FAS are the number of ATM machines and the number of bank branches in a country. The objective of this analysis is to provide policy maker with stronger rationale to design more specific intervention rather than a generic one. For example, which one should be prioritized to improve overall welfare, a free bank account for poor people or increasing the presence of bank branches network.</p>
 <h1>Data Preparation</h1>
@@ -138,6 +144,7 @@
 To answer these questions, we do these following steps.</p>
 <p><strong>First</strong>, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.</p>
 <p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow:</p>
+<div class="math">$$log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)$$</div>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
@@ -154,14 +161,85 @@ To answer these questions, we do these following steps.</p>
 <p><strong>Estimation</strong>. The estimation result showed that the most effective financial inclusion policy to improve GDP per Capita is the one which related to the Geographical Outreach. In our parsimonious regression, we used the number of ATM machine as the selected variable for Geographical Outreach category. We can interpret the coefficient (0.06) as: All else constant, for each additional 1% increase in ATM per 1000km, we expect about 0.06% increase in GDP per capita. This tells us that one of the most basic needs of a country to progress toward better financial inclusion and achieving welfare improvement is by spreading more access point to the basic financial services (e.g. ATM and bank branch).</p>
 <p><strong>Prediction</strong>. Using OLS, the result of our parsimonious regression is the best one compared to Polynomial Regression and SGD Regression. The small sample size may explain why the test set also performed better under OLS. With only 25 countries as the test set, it will be hard for the non-linear model to capture the whole pattern of the data, thus the linear one performs better.</p>
 <p><strong>PCA</strong>. Based on the scatter plot between PCA1 VS PCA2, we got a very interesting pattern and behavior of latent variables. We can see most of high-income countries have a high value of PCA1 and low value of PCA2. On the other hand, the rest of the income group scored a reversed pattern both for PCA1 and PCA2. We can interpret these as a barrier for a better financial inclusion. The barrier is so high thus only high-income countries can tackle this issue. One possible explanation for these are related to the financial barrier (e.g. high bank account administration cost, high transaction fee) and non-financial barrier (e.g. distance to the nearest bank, heavy documentation to open a bank account).</p>
+<p><img alt="PCA" src="images/PCA.png"></p>
 <h1>FURTHER WORK &amp; IMPROVEMENT</h1>
-<p>Some of the potential further works to improve the results are:
-- Adding theoretically strong structural aspect as a control variable to mitigate the confounding factors which has not included in the model. Some macro variables are worth to consider, such as poverty rate, unemployment rate, and interest rate.
-- Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods</p>
+<p>Some of the potential further works to improve the results are:</p>
+<ul>
+<li>
+<p>Adding theoretically strong structural aspect as a control variable to mitigate the confounding factors which has not included in the model. Some macro variables are worth to consider, such as poverty rate, unemployment rate, and interest rate.</p>
+</li>
+<li>
+<p>Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods</p>
+</li>
+</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="./tag/school.html">School</a>
+      <a href="./tag/school-projects.html">School Projects</a>
+      <a href="./tag/python.html">Python</a>
+      <a href="./tag/api.html">API</a>
     </p>
   </div>
 
