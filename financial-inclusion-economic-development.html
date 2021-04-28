@@ -31,13 +31,13 @@
 
 
 <meta name="author" content="Boni Oloff" />
-<meta name="description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Tools used: .. include …" />
+<meta name="description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Analysis using Python …" />
 <meta name="keywords" content="School Projects, Python, API">
 
 
 <meta property="og:site_name" content="Boni's Projects"/>
 <meta property="og:title" content="Financial Inclusion and Economic Development"/>
-<meta property="og:description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Tools used: .. include …"/>
+<meta property="og:description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Analysis using Python …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="./financial-inclusion-economic-development.html"/>
 <meta property="og:type" content="article"/>
@@ -132,10 +132,8 @@
 </blockquote>
 <p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.</p>
 <blockquote>
-<p>Tools used:
-.. include::finalproject.py
-    :code: python
-    :start-after: // begin
+<p>Analysis using Python with the following packages:
+.. code-block:: python
     import os
     import geopandas as gpd
     import matplotlib.pyplot as plt
@@ -155,8 +153,7 @@
     from sklearn.pipeline import Pipeline, make_pipeline
     from sklearn.preprocessing import PolynomialFeatures, StandardScaler
     from sklearn.decomposition import PCA
-    from tqdm import tqdm
-    :end-before: // end</p>
+    from tqdm import tqdm</p>
 </blockquote>
 <h1>Introduction</h1>
 <p>In this project, we explored the 2017 <strong>World Bank Global Financial Inclusion (Findex)</strong> database as the latest publicly available cross-countries consumer survey data about the access of basic financial service (demand-side) in order to understand the role of financial inclusion for economic development. Example of key measures from Global Findex are the % of bank account ownership and reasons why people do not have a bank account. We also combined those with 2017 <strong>IMF Financial Access Survey (FAS)</strong> database to balance the information from the financial service provider perspective (supply-side). Example of key measures from FAS are the number of ATM machines and the number of bank branches in a country. The objective of this analysis is to provide policy maker with stronger rationale to design more specific intervention rather than a generic one. For example, which one should be prioritized to improve overall welfare, a free bank account for poor people or increasing the presence of bank branches network.</p>
