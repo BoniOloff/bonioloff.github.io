@@ -31,13 +31,13 @@
 
 
 <meta name="author" content="Boni Oloff" />
-<meta name="description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Analysis using Python …" />
+<meta name="description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using …" />
 <meta name="keywords" content="School Projects, Python, API">
 
 
 <meta property="og:site_name" content="Boni's Projects"/>
 <meta property="og:title" content="Financial Inclusion and Economic Development"/>
-<meta property="og:description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. Analysis using Python …"/>
+<meta property="og:description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="./financial-inclusion-economic-development.html"/>
 <meta property="og:type" content="article"/>
@@ -130,11 +130,8 @@
 <blockquote>
 <p>This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the <strong>Data and Programming for Public Policy II - PPHA 30536</strong> class at <em>The University of Chicago</em>.</p>
 </blockquote>
-<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare.</p>
-<blockquote>
-<p>Analysis using Python with the following packages:</p>
-</blockquote>
-<p>.. code-block:: python
+<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python.</p>
+<p><code>
     import os
     import geopandas as gpd
     import matplotlib.pyplot as plt
@@ -154,7 +151,8 @@
     from sklearn.pipeline import Pipeline, make_pipeline
     from sklearn.preprocessing import PolynomialFeatures, StandardScaler
     from sklearn.decomposition import PCA
-    from tqdm import tqdm</p>
+    from tqdm import tqdm
+</code></p>
 <h1>Introduction</h1>
 <p>In this project, we explored the 2017 <strong>World Bank Global Financial Inclusion (Findex)</strong> database as the latest publicly available cross-countries consumer survey data about the access of basic financial service (demand-side) in order to understand the role of financial inclusion for economic development. Example of key measures from Global Findex are the % of bank account ownership and reasons why people do not have a bank account. We also combined those with 2017 <strong>IMF Financial Access Survey (FAS)</strong> database to balance the information from the financial service provider perspective (supply-side). Example of key measures from FAS are the number of ATM machines and the number of bank branches in a country. The objective of this analysis is to provide policy maker with stronger rationale to design more specific intervention rather than a generic one. For example, which one should be prioritized to improve overall welfare, a free bank account for poor people or increasing the presence of bank branches network.</p>
 <h1>Data Preparation</h1>
@@ -171,8 +169,7 @@ To answer these questions, we do these following steps.</p>
 <p><strong>First</strong>, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.</p>
 <p><img alt="Bank Branches" src="images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="images/map_gdp.png"></p>
-<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow:</p>
-<p><span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
+<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: <span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
