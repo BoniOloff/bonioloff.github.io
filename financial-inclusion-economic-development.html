@@ -189,7 +189,7 @@ To answer these questions, we do these following steps.</p>
 <p><img alt="Bank Branches" src="/images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="/images/map_gdp.png"></p>
 <p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: 
-<span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)\linebreak+\beta_2(financialaccount)\linebreak+\beta_3(noaccount)\linebreak+\beta_4(internetpayment)\linebreak+\beta_5log(ATM)\linebreak+\beta_6log(bankbranch)\)</span></p>
+<span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
@@ -221,9 +221,9 @@ To answer these questions, we do these following steps.</p>
 </li>
 </ul>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
+    var align = "left",
         indent = "0em",
-        linebreak = "false";
+        linebreak = "true";
 
     if (false) {
         align = (screen.width < 768) ? "left" : align;
@@ -257,7 +257,7 @@ To answer these questions, we do these following steps.</p>
         "    'HTML-CSS': { " +
         "        availableFonts: ['STIX', 'TeX']," +
         "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'blue ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
         "}); " +
