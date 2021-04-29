@@ -79,7 +79,7 @@ To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "left",
+    var align = "center",
         indent = "0em",
         linebreak = "true";
 
@@ -115,7 +115,7 @@ To answer these questions, we do these following steps.&lt;/p&gt;
         "    'HTML-CSS': { " +
         "        availableFonts: ['STIX', 'TeX']," +
         "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'blue ! important'} }," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
         "}); " +
