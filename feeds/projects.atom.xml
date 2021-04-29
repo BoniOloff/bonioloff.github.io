@@ -46,9 +46,7 @@ To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Bank Branches" src="/images/map_bankbranches.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="GDP" src="/images/map_gdp.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: &lt;span class="math"&gt;\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Account&lt;/strong&gt;: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Financial Account&lt;/strong&gt;: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.&lt;/li&gt;
@@ -140,4 +138,4 @@ To answer these questions, we do these following steps.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category></entry></feed>
+&lt;/script&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category><category term="Machine Learning"></category><category term="Data Visualization"></category></entry></feed>
