@@ -16,6 +16,7 @@
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
           href="./theme/pygments/monokai.min.css">
 
+    <link rel="stylesheet" href="./theme/tipuesearch/tipuesearch.min.css" />
 
   <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
@@ -26,6 +27,8 @@
     <link href="https://bonioloff.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Boni's Projects Atom">
 
 
+    <link rel="shortcut icon" href="https://bonioloff.github.io/images/B.png" type="image/x-icon">
+    <link rel="icon" href="https://bonioloff.github.io/images/B.png" type="image/x-icon">
 
   
 
@@ -65,6 +68,9 @@
       </h1>
 
 <p>Boni's Projects</p>
+        <form class="navbar-search" action="/search.html" role="search">
+          <input type="text" name="q" id="tipue_search_input" placeholder="Search...">
+        </form>
 
       <nav>
         <ul class="list">
@@ -121,6 +127,7 @@
     <p>
       Posted on Wed 28 April 2021 in <a href="./category/projects.html">Projects</a>
 
+        &#8226; 7 min read
     </p>
   </header>
 
@@ -130,27 +137,27 @@
 <blockquote>
 <p>This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the <strong>Data and Programming for Public Policy II - PPHA 30536</strong> class at <em>The University of Chicago</em>.</p>
 </blockquote>
-<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with several pagkages below:</p>
-<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">os</span>
-    <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
-    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-    <span class="kn">import</span> <span class="nn">requests</span>
-    <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-    <span class="kn">import</span> <span class="nn">wbdata</span>
-    <span class="kn">import</span> <span class="nn">datetime</span>
-    <span class="kn">import</span> <span class="nn">time</span>
-    <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">exists</span>
-    <span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">colors</span>
-    <span class="kn">from</span> <span class="nn">mpl_toolkits.axes_grid1</span> <span class="kn">import</span> <span class="n">make_axes_locatable</span>
-    <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
-    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span><span class="p">,</span> <span class="n">SGDRegressor</span>
-    <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_validate</span>
-    <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">make_pipeline</span>
-    <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span><span class="p">,</span> <span class="n">StandardScaler</span>
-    <span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-    <span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code <a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development">here</a>. Below some of the packages used:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">wbdata</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">exists</span>
+<span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">colors</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.axes_grid1</span> <span class="kn">import</span> <span class="n">make_axes_locatable</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span><span class="p">,</span> <span class="n">SGDRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_validate</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 </code></pre></div>
 
 <h1>Introduction</h1>
@@ -169,7 +176,9 @@ To answer these questions, we do these following steps.</p>
 <p><strong>First</strong>, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.</p>
 <p><img alt="Bank Branches" src="images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="images/map_gdp.png"></p>
-<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: <span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
+<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: 
+$log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)$
+$+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)$</p>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
@@ -200,68 +209,6 @@ To answer these questions, we do these following steps.</p>
 <p>Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods</p>
 </li>
 </ul>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
   </div>
   <div class="tag-cloud">
     <p>
