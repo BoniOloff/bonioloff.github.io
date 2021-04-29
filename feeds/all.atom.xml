@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Boni's Projects</title><link href="https://bonioloff.github.io/" rel="alternate"></link><link href="https://bonioloff.github.io/feeds/all.atom.xml" rel="self"></link><id>https://bonioloff.github.io/</id><updated>2021-04-28T10:20:00-05:00</updated><subtitle>Boni's Projects</subtitle><entry><title>Financial Inclusion and Economic Development</title><link href="https://bonioloff.github.io/financial-inclusion-economic-development.html" rel="alternate"></link><published>2021-04-28T10:20:00-05:00</published><updated>2021-04-28T10:20:00-05:00</updated><author><name>Boni Oloff</name></author><id>tag:bonioloff.github.io,2021-04-28:/financial-inclusion-economic-development.html</id><summary type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="/images/map_findex.png"&gt;&lt;/p&gt;
 &lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code in &lt;a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development"&gt;this repository.&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA …&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="/images/map_findex.png"&gt;&lt;/p&gt;
+&lt;p&gt;This is a project of me @bonioloff and @harryhendharto for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="/images/map_findex.png"&gt;&lt;/p&gt;
 &lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code in &lt;a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development"&gt;this repository.&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at &lt;em&gt;The University of Chicago&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This is a project of me @bonioloff and @harryhendharto for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at &lt;em&gt;The University of Chicago&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Below some of the packages used:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;geopandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;gpd&lt;/span&gt;
@@ -139,4 +136,4 @@ To answer these questions, we do these following steps.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category><category term="Machine Learning"></category><category term="Data Visualization"></category></entry></feed>
+&lt;/script&gt;</content><category term="Projects"></category><category term="Python"></category><category term="API"></category><category term="Machine Learning"></category><category term="Data Visualization"></category></entry></feed>
