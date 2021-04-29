@@ -130,29 +130,29 @@
 <blockquote>
 <p>This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the <strong>Data and Programming for Public Policy II - PPHA 30536</strong> class at <em>The University of Chicago</em>.</p>
 </blockquote>
-<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python.</p>
-<p><code>
-    import os
-    import geopandas as gpd
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import pandas as pd
-    import requests
-    import seaborn as sns
-    import wbdata
-    import datetime
-    import time
-    from os.path import exists
-    import matplotlib.colors as colors
-    from mpl_toolkits.axes_grid1 import make_axes_locatable
-    from sklearn import metrics
-    from sklearn.linear_model import LinearRegression, SGDRegressor
-    from sklearn.model_selection import train_test_split, cross_validate
-    from sklearn.pipeline import Pipeline, make_pipeline
-    from sklearn.preprocessing import PolynomialFeatures, StandardScaler
-    from sklearn.decomposition import PCA
-    from tqdm import tqdm
-</code></p>
+<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with several pagkages below:</p>
+<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+    <span class="kn">import</span> <span class="nn">requests</span>
+    <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+    <span class="kn">import</span> <span class="nn">wbdata</span>
+    <span class="kn">import</span> <span class="nn">datetime</span>
+    <span class="kn">import</span> <span class="nn">time</span>
+    <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">exists</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">colors</span>
+    <span class="kn">from</span> <span class="nn">mpl_toolkits.axes_grid1</span> <span class="kn">import</span> <span class="n">make_axes_locatable</span>
+    <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span><span class="p">,</span> <span class="n">SGDRegressor</span>
+    <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_validate</span>
+    <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">make_pipeline</span>
+    <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span><span class="p">,</span> <span class="n">StandardScaler</span>
+    <span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+    <span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+</code></pre></div>
+
 <h1>Introduction</h1>
 <p>In this project, we explored the 2017 <strong>World Bank Global Financial Inclusion (Findex)</strong> database as the latest publicly available cross-countries consumer survey data about the access of basic financial service (demand-side) in order to understand the role of financial inclusion for economic development. Example of key measures from Global Findex are the % of bank account ownership and reasons why people do not have a bank account. We also combined those with 2017 <strong>IMF Financial Access Survey (FAS)</strong> database to balance the information from the financial service provider perspective (supply-side). Example of key measures from FAS are the number of ATM machines and the number of bank branches in a country. The objective of this analysis is to provide policy maker with stronger rationale to design more specific intervention rather than a generic one. For example, which one should be prioritized to improve overall welfare, a free bank account for poor people or increasing the presence of bank branches network.</p>
 <h1>Data Preparation</h1>
