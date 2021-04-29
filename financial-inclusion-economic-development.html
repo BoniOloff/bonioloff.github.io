@@ -31,7 +31,16 @@
     <link rel="icon" href="https://bonioloff.github.io/images/B.png" type="image/x-icon">
 
   
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0YH541K46"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-J0YH541K46');
+</script>
+<!-- End of Global site tag (gtag.js) - Google Analytics -->
 
 <meta name="author" content="Boni Oloff" />
 <meta name="description" content="An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code in this repository. This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA …" />
@@ -179,10 +188,8 @@ To answer these questions, we do these following steps.</p>
 <p><strong>First</strong>, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.</p>
 <p><img alt="Bank Branches" src="/images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="/images/map_gdp.png"></p>
-<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: </p>
-<blockquote>
-<p><span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
-</blockquote>
+<p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: 
+<span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)\linebreak+\beta_2(financialaccount)\linebreak+\beta_3(noaccount)\linebreak+\beta_4(internetpayment)\linebreak+\beta_5log(ATM)\linebreak+\beta_6log(bankbranch)\)</span></p>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
