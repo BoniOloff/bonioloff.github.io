@@ -14,7 +14,7 @@
 
 
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="https://bonioloff.github.io/theme/pygments/monokai.min.css">
+          href="https://bonioloff.github.io/theme/pygments/material.min.css">
 
     <link rel="stylesheet" href="https://bonioloff.github.io/theme/tipuesearch/tipuesearch.min.css" />
 
@@ -34,13 +34,13 @@
 
 
 <meta name="author" content="Boni Oloff" />
-<meta name="description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using …" />
+<meta name="description" content="An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code here. This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class …" />
 <meta name="keywords" content="School Projects, Python, API">
 
 
 <meta property="og:site_name" content="Boni's Projects"/>
 <meta property="og:title" content="Financial Inclusion and Economic Development"/>
-<meta property="og:description" content="This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class at The University of Chicago. An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using …"/>
+<meta property="og:description" content="An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code here. This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the Data and Programming for Public Policy II - PPHA 30536 class …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://bonioloff.github.io/financial-inclusion-economic-development.html"/>
 <meta property="og:type" content="article"/>
@@ -134,10 +134,11 @@
 
   <div>
     <p><img alt="Map FINDEX" src="images/map_findex.png"></p>
+<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code <a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development">here</a>.</p>
 <blockquote>
 <p>This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the <strong>Data and Programming for Public Policy II - PPHA 30536</strong> class at <em>The University of Chicago</em>.</p>
 </blockquote>
-<p>An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code <a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development">here</a>. Below some of the packages used:</p>
+<p>Below some of the packages used:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -177,8 +178,8 @@ To answer these questions, we do these following steps.</p>
 <p><img alt="Bank Branches" src="images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="images/map_gdp.png"></p>
 <p><strong>Second</strong>, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: </p>
-<p>$log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)$</p>
-<p>$+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)$</p>
+<p><span class="math">\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)\)</span></p>
+<p><span class="math">\(+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)</span></p>
 <ul>
 <li><strong>Account</strong>: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.</li>
 <li><strong>Financial Account</strong>: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.</li>
@@ -209,6 +210,68 @@ To answer these questions, we do these following steps.</p>
 <p>Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods</p>
 </li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
   </div>
   <div class="tag-cloud">
     <p>

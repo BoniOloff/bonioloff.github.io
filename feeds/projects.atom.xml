@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Boni's Projects - Projects</title><link href="https://bonioloff.github.io/" rel="alternate"></link><link href="https://bonioloff.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://bonioloff.github.io/</id><updated>2021-04-28T10:20:00-05:00</updated><subtitle>Boni's Projects</subtitle><entry><title>Financial Inclusion and Economic Development</title><link href="https://bonioloff.github.io/financial-inclusion-economic-development.html" rel="alternate"></link><published>2021-04-28T10:20:00-05:00</published><updated>2021-04-28T10:20:00-05:00</updated><author><name>Boni Oloff</name></author><id>tag:bonioloff.github.io,2021-04-28:/financial-inclusion-economic-development.html</id><summary type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="images/map_findex.png"&gt;&lt;/p&gt;
+&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code &lt;a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="images/map_findex.png"&gt;&lt;/p&gt;
+&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code &lt;a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at &lt;em&gt;The University of Chicago&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Map FINDEX" src="images/map_findex.png"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a project of me (@bonioloff) and Harry Satriyo Hendharto (@harryhendharto) for the &lt;strong&gt;Data and Programming for Public Policy II - PPHA 30536&lt;/strong&gt; class at &lt;em&gt;The University of Chicago&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;An exploratory study to learn how micro aspects of financial inclusion play an important role in improving welfare. The analysis using Python with complete code &lt;a href="https://github.com/BoniOloff/financial-inclusion-and-economic-development"&gt;here&lt;/a&gt;. Below some of the packages used:&lt;/p&gt;
+&lt;p&gt;Below some of the packages used:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;geopandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;gpd&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
@@ -47,8 +47,8 @@ To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Bank Branches" src="images/map_bankbranches.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="GDP" src="images/map_gdp.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Second&lt;/strong&gt;, we try to build a parsimonious regression model based on the selected indicators for each component of financial inclusion measures to predict GDP per Capita, thus specify the model as follow: &lt;/p&gt;
-&lt;p&gt;$log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)$&lt;/p&gt;
-&lt;p&gt;$+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)$&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(log(GDPpercap)=\beta_0+\beta_1(account)+\beta_2(financialaccount)+\beta_3(noaccount)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(+\beta_4(internetpayment)+\beta_5log(ATM)+\beta_6log(bankbranch)\)&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Account&lt;/strong&gt;: has an account at formal or non-formal financial institution. This variable captures the unbanked population as the first step to a financial access.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Financial Account&lt;/strong&gt;: has an account at formal financial institution (e.g. bank). This variable captures the next step toward better financial inclusion.&lt;/li&gt;
@@ -78,4 +78,66 @@ To answer these questions, we do these following steps.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;Including 2011 and 2014 Findex and FAS data into the whole analysis. Although some indicators are new and some are obsolete, some subsets of indicators consistently appeared in those 3 survey periods&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category></entry></feed>
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Projects"></category><category term="School Projects"></category><category term="Python"></category><category term="API"></category></entry></feed>
