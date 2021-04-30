@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://bonioloff.github.io/</loc>
-<lastmod>2021-04-29T00:09:57-00:00</lastmod>
+<lastmod>2021-04-30T11:12:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://bonioloff.github.io/tags.html</loc>
-<lastmod>2021-04-29T00:09:57-00:00</lastmod>
+<lastmod>2021-04-30T11:12:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://bonioloff.github.io/categories.html</loc>
-<lastmod>2021-04-29T00:09:57-00:00</lastmod>
+<lastmod>2021-04-30T11:12:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://bonioloff.github.io/authors.html</loc>
-<lastmod>2021-04-29T00:09:57-00:00</lastmod>
+<lastmod>2021-04-30T11:12:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://bonioloff.github.io/archives.html</loc>
-<lastmod>2021-04-29T00:09:57-00:00</lastmod>
+<lastmod>2021-04-30T11:12:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://bonioloff.github.io/pages/about.html</loc>
 <lastmod>2010-12-05T19:30:00-06:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://bonioloff.github.io/dataviz_coronavirus_unemployment.html</loc>
+<lastmod>2021-04-30T10:20:00-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -54,7 +61,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://bonioloff.github.io/category/projects.html</loc>
-<lastmod>2021-04-28T10:20:00-05:51</lastmod>
+<lastmod>2021-04-30T10:20:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://bonioloff.github.io/tag/d3.html</loc>
+<lastmod>2021-04-30T10:20:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://bonioloff.github.io/tag/data-visualization.html</loc>
+<lastmod>2021-04-30T10:20:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -81,15 +102,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://bonioloff.github.io/tag/data-visualization.html</loc>
-<lastmod>2021-04-28T10:20:00-05:51</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://bonioloff.github.io/author/boni-oloff.html</loc>
-<lastmod>2021-04-28T10:20:00-05:51</lastmod>
+<lastmod>2021-04-30T10:20:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
