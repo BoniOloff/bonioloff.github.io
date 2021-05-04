@@ -26,8 +26,8 @@
     <link href="https://bonioloff.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Boni's Projects Atom">
 
 
-    <link rel="shortcut icon" href="https://bonioloff.github.io/images/B.png" type="image/x-icon">
-    <link rel="icon" href="https://bonioloff.github.io/images/B.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://bonioloff.github.io/images/b_icon.png" type="image/x-icon">
+    <link rel="icon" href="https://bonioloff.github.io/images/b_icon.png" type="image/x-icon">
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,7 +60,7 @@
 <meta property="article:tag" content="API"/>
 <meta property="article:tag" content="Machine Learning"/>
 <meta property="article:tag" content="Data Visualization"/>
-<meta property="og:image" content="https://bonioloff.github.io/images/B.png">
+<meta property="og:image" content="https://bonioloff.github.io/images/b_icon.png">
 
   <title>Boni's Projects &ndash; Financial Inclusion and Economic Development</title>
 
@@ -69,7 +69,7 @@
   <aside>
     <div>
       <a href=".">
-        <img src="https://bonioloff.github.io/images/B.png" alt="Boni Oloff" title="Boni Oloff">
+        <img src="https://bonioloff.github.io/images/b_icon.png" alt="Boni Oloff" title="Boni Oloff">
       </a>
 
       <h1>
@@ -89,9 +89,6 @@
                 </a>
               </li>
 
-            <li>
-              <a target="_self" href="#" >CV</a>
-            </li>
             <li>
               <a target="_self" href="https://bonioloff.github.io/category/projects.html" >Projects</a>
             </li>
@@ -174,10 +171,12 @@
 <p><strong>Data merging</strong>: After we got both of the datasets (Findex &amp; FAS), we merged those with the help of <em>country_id</em> information (3-digit code) to make sure the merging process is correct without accidently removing countries which have a different name on each dataset (e.g. United States VS United States of America). The result is a main dataframe (<em>df_imfwb</em>) with 126 rows (representing 126 countries) and 54 columns (representing 49 indicators from Findex and 5 indicators from FAS). Lastly, we add one additional column as our dependent variable in this analysis, that is GDP per capita. We did a similar API calling procedure to get the data from World Bank World Development Indicator (WDI). For the specific purpose of spatial visualization, we also imported countries shapefile data from Geopandas and add them as geometry column into our final <em>df_imfwb</em>.</p>
 <h1>RESEARCH QUESTIONS &amp; METHODOLOGY</h1>
 <p><img alt="Methodology" src="/images/methodology.jpg"></p>
-<p>The main objective of this report is to provide some useful information as a starting point to design specific interventions related to financial inclusion policy and how it can contribute to improve welfare (measured by GDP per Capita). Specifically, our research questions are:
-- What aspect of financial inclusions are predictive of GDP per Capita?
-- What evidence say about the multidimensionality aspects of financial inclusion?
-To answer these questions, we do these following steps.</p>
+<p>The main objective of this report is to provide some useful information as a starting point to design specific interventions related to financial inclusion policy and how it can contribute to improve welfare (measured by GDP per Capita). Specifically, our research questions are:</p>
+<ul>
+<li>What aspect of financial inclusions are predictive of GDP per Capita?</li>
+<li>What evidence say about the multidimensionality aspects of financial inclusion?</li>
+</ul>
+<p>To answer these questions, we do these following steps:</p>
 <p><strong>First</strong>, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.</p>
 <p><img alt="Bank Branches" src="/images/map_bankbranches.png"></p>
 <p><img alt="GDP" src="/images/map_gdp.png"></p>
@@ -307,7 +306,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@type" : "Blog",
   "name": " Boni's Projects ",
   "url" : ".",
-  "image": "https://bonioloff.github.io/images/B.png",
+  "image": "https://bonioloff.github.io/images/b_icon.png",
   "description": "Learn and Create"
 }
 </script>

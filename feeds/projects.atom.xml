@@ -42,10 +42,12 @@
 &lt;p&gt;&lt;strong&gt;Data merging&lt;/strong&gt;: After we got both of the datasets (Findex &amp;amp; FAS), we merged those with the help of &lt;em&gt;country_id&lt;/em&gt; information (3-digit code) to make sure the merging process is correct without accidently removing countries which have a different name on each dataset (e.g. United States VS United States of America). The result is a main dataframe (&lt;em&gt;df_imfwb&lt;/em&gt;) with 126 rows (representing 126 countries) and 54 columns (representing 49 indicators from Findex and 5 indicators from FAS). Lastly, we add one additional column as our dependent variable in this analysis, that is GDP per capita. We did a similar API calling procedure to get the data from World Bank World Development Indicator (WDI). For the specific purpose of spatial visualization, we also imported countries shapefile data from Geopandas and add them as geometry column into our final &lt;em&gt;df_imfwb&lt;/em&gt;.&lt;/p&gt;
 &lt;h1&gt;RESEARCH QUESTIONS &amp;amp; METHODOLOGY&lt;/h1&gt;
 &lt;p&gt;&lt;img alt="Methodology" src="/images/methodology.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;The main objective of this report is to provide some useful information as a starting point to design specific interventions related to financial inclusion policy and how it can contribute to improve welfare (measured by GDP per Capita). Specifically, our research questions are:
-- What aspect of financial inclusions are predictive of GDP per Capita?
-- What evidence say about the multidimensionality aspects of financial inclusion?
-To answer these questions, we do these following steps.&lt;/p&gt;
+&lt;p&gt;The main objective of this report is to provide some useful information as a starting point to design specific interventions related to financial inclusion policy and how it can contribute to improve welfare (measured by GDP per Capita). Specifically, our research questions are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What aspect of financial inclusions are predictive of GDP per Capita?&lt;/li&gt;
+&lt;li&gt;What evidence say about the multidimensionality aspects of financial inclusion?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To answer these questions, we do these following steps:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;First&lt;/strong&gt;, we did an exploratory data analysis to select the highest mean for each group of indicators. For example, for account ownership set of indicators, we select account ownership of adults with secondary education or more to represent this group. And for no account set of indicators, we select no account because of insufficient funds to represent this group.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Bank Branches" src="/images/map_bankbranches.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="GDP" src="/images/map_gdp.png"&gt;&lt;/p&gt;
