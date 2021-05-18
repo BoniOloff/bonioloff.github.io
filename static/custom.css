@@ -9,3 +9,7 @@ main footer p {
     color: #999;
     font-size: 0px;
 }
+
+a {
+    font-weight: bold;
+}
