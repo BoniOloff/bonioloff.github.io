@@ -11,7 +11,7 @@
 
 ## Personal Notes
 - <a href="https://github.com/bonioloff/note_pyspark/blob/main/PySpark_Note.ipynb" target="_blank">PySpark Notes</a>
-- <a href="https://bonioloff.github.io/note/delete_edge_account.html" target="_blank">How to Delete Microsoft Edge Profile Account on MacOS</a>
+- <a href="https://bonioloff.github.io/note/delete_edge_account.html">How to Delete Microsoft Edge Profile Account on MacOS</a>
 
 
 ## Certifications
