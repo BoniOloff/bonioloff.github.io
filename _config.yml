@@ -1,12 +1,10 @@
-title: Boni's Page
+title: BoniCode
 logo: 
 description: Complex is better than complicated
 show_downloads: false
 google_analytics: G-J0YH541K46
 remote_theme: bonioloff/minimal
-main_page: https://bonioloff.github.io
-linkedin: https://www.linkedin.com/in/bonioloff/
-hackerrank: https://www.hackerrank.com/bonioloff
+main_page: https://bonicode.github.io
 github:
   is_user_page: true
   is_project_page: false
