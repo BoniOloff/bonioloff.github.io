@@ -1,4 +1,4 @@
-## Personal Projects
+## Projects
 - <a href="https://nugrahacode.github.io/stock-price-kafka-stream/">Stock Price Pub/Sub System with Kafka</a>
 - Children on Poverty Maps - <a href="https://github.com/nugrahacode/poverty_interactive_map" target="_blank">Repository</a> / <a href="./poverty_interactive_map/" target="_blank">Demo</a>
 - Children on Poverty Maps Choropleth - <a href="https://github.com/nugrahacode/interactive_poverty_choropleth" target="_blank">Repository</a> / <a href="./interactive_poverty_choropleth/" target="_blank">Demo</a>
@@ -9,7 +9,7 @@
 
 
 
-## Personal Notes
+## Notes
 - <a href="https://github.com/nugrahacode/note_pyspark/blob/main/PySpark_Note.ipynb" target="_blank">PySpark Notes</a>
 - <a href="https://nugrahacode.github.io/note/delete_edge_account.html">How to Delete Microsoft Edge Profile Account on MacOS</a>
 
