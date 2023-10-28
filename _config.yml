@@ -1,10 +1,10 @@
-title: NugrahaCode
+title: Nugraha Code
 logo: 
-description: Complex is better than complicated
+description: Complex is Better than Complicated
 show_downloads: false
 google_analytics: G-J0YH541K46
 remote_theme: nugrahacode/minimal
-main_page: https://nugrahacode.github.io
+main_page: https://nugrahacode.github.io/
 github:
   is_user_page: true
   is_project_page: false
