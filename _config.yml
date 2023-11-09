@@ -1,17 +1,17 @@
-title: Nugraha Code
+# title: Nugraha Code
 logo: /assets/img/nc.jpeg
-description: Complex is Better than Complicated
+# description: Complex is Better than Complicated
 show_downloads: false
-google_analytics: G-J0YH541K46
+# google_analytics: G-J0YH541K46
 remote_theme: nugrahacode/minimal
 main_page: https://nugrahacode.github.io/
 github:
   is_user_page: true
   is_project_page: false
-platforms:
-  - name: GitHub
-    icon: <i class="fa-brands fa-github"></i>
-    link: https://github.com/nugrahacode
-  - name: LinkedIn
-    icon: <i class="fa-brands fa-linkedin"></i>
-    link: https://www.linkedin.com/in/b-nugraha/
+# platforms:
+#   - name: GitHub
+#     icon: <i class="fa-brands fa-github"></i>
+#     link: https://github.com/nugrahacode
+#   - name: LinkedIn
+#     icon: <i class="fa-brands fa-linkedin"></i>
+#     link: https://www.linkedin.com/in/b-nugraha/
