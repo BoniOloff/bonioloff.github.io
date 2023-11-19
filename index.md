@@ -1,5 +1,4 @@
-# Nugraha Code Projects
-## Projects
+# Projects
 - <a href="https://nugrahacode.github.io/stock-price-kafka-stream/">Stock Price Pub/Sub System with Kafka</a>
 - Children on Poverty Maps - <a href="https://github.com/nugrahacode/poverty_interactive_map" target="_blank">Repository</a> / <a href="./poverty_interactive_map/" target="_blank">Demo</a>
 - Children on Poverty Maps Choropleth - <a href="https://github.com/nugrahacode/interactive_poverty_choropleth" target="_blank">Repository</a> / <a href="./interactive_poverty_choropleth/" target="_blank">Demo</a>
@@ -9,7 +8,7 @@
 - <a href="https://nugrahacode.github.io/global_agri_analytics/">Financial Inclusion and Economic Development</a>
 
 
-## Certifications
+# Certifications
 - <a href="https://credentials.databricks.com/a3713fad-6549-4db4-badf-c49e6b050745#gs.7ihnmv" target="_blank">Databricks Certified Data Engineer Professional</a>
 - <a href="https://credentials.databricks.com/5f91343b-8906-439e-a023-7cfa5bcd7aac#gs.7ihom7" target="_blank">Databricks Certified Associate Developer for Apache Spark 3.0</a>
 - <a href="https://www.credential.net/52aed936-400b-4f9d-b28b-5b53741777df" target="_blank">Databricks Certified Data Engineer Associate</a>
