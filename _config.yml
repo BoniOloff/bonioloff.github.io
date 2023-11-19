@@ -1,4 +1,4 @@
-remote_theme: pages-themes/tactile
+theme: jekyll-theme-tactile
 title: NugrahaCode
 description: Complex is Better than Complicated
 show_downloads: false
