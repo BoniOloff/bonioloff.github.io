@@ -1,4 +1,4 @@
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/midnight@v0.2.0
 title: NugrahaCode
 description: Complex is Better than Complicated
 show_downloads: false
@@ -7,5 +7,5 @@ main_page: https://nugrahacode.github.io/
 github:
   is_user_page: true
   is_project_page: false
-# plugins:
-# - jekyll-remote-theme
+plugins:
+- jekyll-remote-theme
