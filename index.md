@@ -8,12 +8,6 @@
 - <a href="https://nugrahacode.github.io/global_agri_analytics/">Financial Inclusion and Economic Development</a>
 
 
-
-## Notes
-- <a href="https://github.com/nugrahacode/note_pyspark/blob/main/PySpark_Note.ipynb" target="_blank">PySpark Notes</a>
-- <a href="https://nugrahacode.github.io/note/delete_edge_account.html">How to Delete Microsoft Edge Profile Account on MacOS</a>
-
-
 ## Certifications
 - <a href="https://credentials.databricks.com/a3713fad-6549-4db4-badf-c49e6b050745#gs.7ihnmv" target="_blank">Databricks Certified Data Engineer Professional</a>
 - <a href="https://credentials.databricks.com/5f91343b-8906-439e-a023-7cfa5bcd7aac#gs.7ihom7" target="_blank">Databricks Certified Associate Developer for Apache Spark 3.0</a>
