@@ -8,7 +8,6 @@ title: NugrahaCode
 - Interactive Visualization of Healthcare by Income - <a href="https://github.com/nugrahacode/interactive_income_graph" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/interactive_income_graph/" target="_blank">Demo</a>
 - Coronavirus Unemployment Graph - <a href="https://github.com/nugrahacode/CoronaVirus_UnEmployment" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/CoronaVirus_UnEmployment/" target="_blank">Demo</a>
 - Decline Of Farming Jobs Graph - <a href="https://github.com/nugrahacode/Graph_Decline_Of_Farming" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/Graph_Decline_Of_Farming/" target="_blank">Demo</a>
-- <a href="https://nugrahacode.github.io/global_agri_analytics/">Financial Inclusion and Economic Development</a>
 
 
 # Certifications
