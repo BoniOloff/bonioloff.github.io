@@ -1,5 +1,5 @@
 ---
-title: NugrahaCode
+title: Boni Nugraha
 ---
 # Projects
 - <a href="https://nugrahacode.github.io/stock-price-kafka-stream/">Stock Price Pub/Sub System with Kafka</a>
