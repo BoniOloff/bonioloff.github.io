@@ -2,12 +2,12 @@
 title: Boni Nugraha
 ---
 # Projects
-- <a href="https://nugrahacode.github.io/stock-price-kafka-stream/">Stock Price Pub/Sub System with Kafka</a>
-- Children on Poverty Maps - <a href="https://github.com/nugrahacode/poverty_interactive_map" target="_blank">Repository</a> / <a href="./poverty_interactive_map/" target="_blank">Demo</a>
-- Children on Poverty Maps Choropleth - <a href="https://github.com/nugrahacode/interactive_poverty_choropleth" target="_blank">Repository</a> / <a href="./interactive_poverty_choropleth/" target="_blank">Demo</a>
-- Interactive Visualization of Healthcare by Income - <a href="https://github.com/nugrahacode/interactive_income_graph" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/interactive_income_graph/" target="_blank">Demo</a>
-- Coronavirus Unemployment Graph - <a href="https://github.com/nugrahacode/CoronaVirus_UnEmployment" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/CoronaVirus_UnEmployment/" target="_blank">Demo</a>
-- Decline Of Farming Jobs Graph - <a href="https://github.com/nugrahacode/Graph_Decline_Of_Farming" target="_blank">Repository</a> / <a href="https://nugrahacode.github.io/Graph_Decline_Of_Farming/" target="_blank">Demo</a>
+- <a href="https://boninugraha.github.io/stock-price-kafka-stream/">Stock Price Pub/Sub System with Kafka</a>
+- Children on Poverty Maps - <a href="https://github.com/boninugraha/poverty_interactive_map" target="_blank">Repository</a> / <a href="./poverty_interactive_map/" target="_blank">Demo</a>
+- Children on Poverty Maps Choropleth - <a href="https://github.com/boninugraha/interactive_poverty_choropleth" target="_blank">Repository</a> / <a href="./interactive_poverty_choropleth/" target="_blank">Demo</a>
+- Interactive Visualization of Healthcare by Income - <a href="https://github.com/boninugraha/interactive_income_graph" target="_blank">Repository</a> / <a href="https://boninugraha.github.io/interactive_income_graph/" target="_blank">Demo</a>
+- Coronavirus Unemployment Graph - <a href="https://github.com/boninugraha/CoronaVirus_UnEmployment" target="_blank">Repository</a> / <a href="https://boninugraha.github.io/CoronaVirus_UnEmployment/" target="_blank">Demo</a>
+- Decline Of Farming Jobs Graph - <a href="https://github.com/boninugraha/Graph_Decline_Of_Farming" target="_blank">Repository</a> / <a href="https://boninugraha.github.io/Graph_Decline_Of_Farming/" target="_blank">Demo</a>
 
 
 # Certifications
