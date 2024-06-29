@@ -11,6 +11,7 @@ title: Boni Nugraha
 
 
 # Certifications
+- <a href="https://www.credly.com/badges/4d2a7766-7ab0-4cc5-8a7c-bff5c705e75f" target="_blank">AWS Certified Solutions Architec Professional</a>
 - <a href="https://credentials.databricks.com/a3713fad-6549-4db4-badf-c49e6b050745#gs.7ihnmv" target="_blank">Databricks Certified Data Engineer Professional</a>
 - <a href="https://credentials.databricks.com/5f91343b-8906-439e-a023-7cfa5bcd7aac#gs.7ihom7" target="_blank">Databricks Certified Associate Developer for Apache Spark 3.0</a>
 - <a href="https://www.credly.com/badges/bf958fa1-efbf-4dd8-a058-b0caa57c1fa9" target="_blank">AWS Certified Solutions Architect - Associate</a>
