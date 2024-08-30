@@ -3,6 +3,7 @@ title: Boni Nugraha
 ---
 # Projects
 - <a href="https://boninugraha.github.io/stock-price-kafka-stream/" target="_blank">Stock Price Pub/Sub System with Kafka</a>
+- <a href="https://github.com/boninugraha/mass_shooting_exploration/" target="_blank">Mass Shooting Exploration</a>
 - <a href="./poverty_interactive_map/" target="_blank">Children on Poverty Maps</a>
 - <a href="./interactive_poverty_choropleth/" target="_blank">Children on Poverty Maps Choropleth</a>
 - <a href="https://boninugraha.github.io/interactive_income_graph/" target="_blank">Interactive Visualization of Healthcare by Income</a>
